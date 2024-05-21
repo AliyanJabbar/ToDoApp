@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+
+
 import inquirer from "inquirer";
 
 let todos = []; //This is an empty array , here we will store our todos using .push

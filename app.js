@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import inquirer from "inquirer";
 let todos = []; //This is an empty array , here we will store our todos using .push
 let condition = true; // we give the default value as true
@@ -16,9 +17,6 @@ while (condition) {
             default: "true" //true means if we not answer , it will concider as yes.
         }
     ]);
-    if (todoQuestions.firstQuestion == ('')) {
-        console.log("Please add a todo");
-    }
     todos.push(todoQuestions.firstQuestion); //push is to add something in our array
     console.log(todos);
     condition = todoQuestions.secondQuestion;
